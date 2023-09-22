@@ -10,7 +10,7 @@ public class StringService {
 
     public static String reverseWordsInParentheses(String s) {
 
-        if (s.length() <= 1 || s.length() <= 2000) {
+        if (s.length() <= 1 || s.length() >= 2000) {
             logger.log(Level.WARNING, "Input length is not within the valid range.");
             return s; // Return the original string as is
         }
